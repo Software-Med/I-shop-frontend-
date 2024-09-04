@@ -6,7 +6,7 @@ export const FetchContext = createContext()
 
 const FetchContextProvider = ({children}) => {
   
-  const {isLoad, data, error} = useFetch("https://i-shop-backend.onrender.com/api/products")
+  const {isLoad, data, error} = useFetch("https://i-shop-backend-inky.vercel.app/api/products")
   
   const dPrice = (num, e) => {
   num = num + ((num * e) / 100)
